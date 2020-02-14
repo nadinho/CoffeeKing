@@ -16,6 +16,21 @@
       crossorigin="anonymous"
     />
 
+    <style>
+      .jumbotron {
+        height: 300px;
+        background-image: url(https://image.jimcdn.com/app/cms/image/transf/dimension=960x/path/s32b4db7ef5258e1b/backgroundarea/ia2ce7cfbfbc7f403/version/1574943151/image.jpg);
+        background-size: cover;
+        color: white;
+        text-align: center;
+        filter: brightness(60%);
+      }
+      .jumbotron.container {
+        z-index: 100;
+        color: white;
+      }
+    </style>
+
     <title>CoffeeKing</title>
   </head>
   <body>
@@ -65,33 +80,65 @@
       </nav>
     </header>
 
-    <!----------CAROUSEL o. JUMBOTRON------------>
-    <div class="jumbotron jumbotron-fluid bg-dark text-white">
-      <div class="container">
-        <h1>CoffeeKing</h1>
-        <h2>Fairtrade Coffee Bar GmbH</h2>
+    <!----------CAROUSEL-->
+
+    <div id="slides" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://image.jimcdn.com/app/cms/image/transf/dimension=960x/path/s32b4db7ef5258e1b/backgroundarea/ia2ce7cfbfbc7f403/version/1574943151/image.jpg"
+          />
+          <div class="carousel-caption">
+            <h1 class="display-2">Coffee King</h1>
+            <h3>Fairtrade Coffee Bar</h3>
+            <button type="button" class="btn btn-light btn-lg">
+              Erfahre mehr
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://image.jimcdn.com/app/cms/image/transf/dimension=960x/path/s32b4db7ef5258e1b/backgroundarea/i0737c927af24706b/version/1554984714/image.jpg"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://image.jimcdn.com/app/cms/image/transf/dimension=960x/path/s32b4db7ef5258e1b/backgroundarea/i2c4686def21a63b2/version/1546944508/image.jpg"
+          />
+        </div>
       </div>
     </div>
-    <!----------INTRO------------>
 
-    <div class="container-sm">
-      <p>
-        Seit über 25 Jahren bietet die Fair Trade Coffee Bar aus Münster
-        Besuchern von Festivals und anderen großen Open Air Veranstaltungen
-        fairen und nachhaltigen Kaffeegenuss. Seit 2016 bieten wir passend dazu
-        ein reichhaltiges Frühstücksangebot.
-      </p>
-      <p>
-        Auf dieser Website stellen wir uns vor. Wir möchten euch die Geschichte
-        der Coffee Bar näherbringen, unser vielfältiges Angebot präsentieren,
-        euch Bilder der letzten Veranstaltungen zeigen und, ganz wichtig,
-        vermitteln welche Überzeugungen hinter "Life is too short to drink bad
-        coffee " stehen.
-      </p>
+    <!-------INTRO---------->
 
-      <p>Wir wünschen euch ganz viel Spaß beim Stöbern!</p>
-
-      <p>Jassi und Lukas</p>
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h2 class="display-4">Nachhaltiger Kaffeegenuss</h2>
+        </div>
+        <hr />
+        <div class="col-12">
+          <p class="lead">
+            Seit über 25 Jahren bietet die Fair Trade Coffee Bar aus Münster
+            Besuchern von Festivals und anderen großen Open Air Veranstaltungen
+            fairen und nachhaltigen Kaffeegenuss. Seit 2016 bieten wir passend
+            dazu ein reichhaltiges Frühstücksangebot.
+          </p>
+          <p class="lead">
+            Auf dieser Website stellen wir uns vor. Wir möchten euch die
+            Geschichte der Coffee Bar näherbringen, unser vielfältiges Angebot
+            präsentieren, euch Bilder der letzten Veranstaltungen zeigen und,
+            ganz wichtig, vermitteln welche Überzeugungen hinter "Life is too
+            short to drink bad coffee " stehen.
+          </p>
+          <p class="lead"></p>
+        </div>
+      </div>
     </div>
 
     <!----------ABOUT------------>
