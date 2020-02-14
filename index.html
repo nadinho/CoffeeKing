@@ -16,21 +16,6 @@
       crossorigin="anonymous"
     />
 
-    <style>
-      .jumbotron {
-        height: 300px;
-        background-image: url(https://image.jimcdn.com/app/cms/image/transf/dimension=960x/path/s32b4db7ef5258e1b/backgroundarea/ia2ce7cfbfbc7f403/version/1574943151/image.jpg);
-        background-size: cover;
-        color: white;
-        text-align: center;
-        filter: brightness(60%);
-      }
-      .jumbotron.container {
-        z-index: 100;
-        color: white;
-      }
-    </style>
-
     <title>CoffeeKing</title>
   </head>
   <body>
@@ -38,7 +23,7 @@
     <header>
       <!--NAV-->
       <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#"
             ><img
               src="https://image.jimcdn.com/app/cms/image/transf/dimension=150x150:format=png/path/s32b4db7ef5258e1b/image/iacfa5cc8872ebddc/version/1546946497/image.png"
@@ -82,41 +67,45 @@
 
     <!----------CAROUSEL-->
 
-    <div id="slides" class="carousel slide" data-ride="carousel">
-      <ul class="carousel-indicators">
-        <li data-target="#slides" data-slide-to="0" class="active"></li>
-        <li data-target="#slides" data-slide-to="1"></li>
-        <li data-target="#slides" data-slide-to="2"></li>
-      </ul>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="https://image.jimcdn.com/app/cms/image/transf/dimension=960x/path/s32b4db7ef5258e1b/backgroundarea/ia2ce7cfbfbc7f403/version/1574943151/image.jpg"
-          />
-          <div class="carousel-caption">
-            <h1 class="display-2">Coffee King</h1>
-            <h3>Fairtrade Coffee Bar</h3>
-            <button type="button" class="btn btn-light btn-lg">
-              Erfahre mehr
-            </button>
+    <div class="container-fluid">
+      <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#slides" data-slide-to="0" class="active"></li>
+          <li data-target="#slides" data-slide-to="1"></li>
+          <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1506361201900-f4bc8d2e8c2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+              class="img-fluid"
+            />
+            <div class="carousel-caption">
+              <h1 class="display-2">Coffee King</h1>
+              <h3>Fairtrade Coffee Bar</h3>
+              <button type="button" class="btn btn-light btn-lg">
+                Erfahre mehr
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://image.jimcdn.com/app/cms/image/transf/dimension=960x/path/s32b4db7ef5258e1b/backgroundarea/i0737c927af24706b/version/1554984714/image.jpg"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://image.jimcdn.com/app/cms/image/transf/dimension=960x/path/s32b4db7ef5258e1b/backgroundarea/i2c4686def21a63b2/version/1546944508/image.jpg"
-          />
+          <div class="carousel-item">
+            <img
+            src="https://images.unsplash.com/photo-1461988366670-48e401bafb0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
+            class="img-fluid" />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2019/05/18/21/15/connectcompetition-4212584_1280.jpg"
+              class="img-fluid"
+            />
+          </div>
         </div>
       </div>
     </div>
 
     <!-------INTRO---------->
 
-    <div class="container-fluid padding">
+    <div class="container-fluid py-5 ">
       <div class="row welcome text-center">
         <div class="col-12">
           <h2 class="display-4">Nachhaltiger Kaffeegenuss</h2>
@@ -141,8 +130,49 @@
       </div>
     </div>
 
-    <!----------ABOUT------------>
     <!----------OFFERS------------>
+    <div class="container-fluid py-5">
+      <div class="row text-center">
+        <div class="col-12">
+          <h2 class="display-4">Unser Angebot</h2>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <h3>Kaffee & Co</h3>
+          <p>
+            Unser Angebot bietet eine große Vielfalt an Erfrischungs- und
+            Heißgetränken: Der bodenständige Filterkaffeeliebhaber schätzt
+            unseren fair gehandelten Kaffee aus Nicaragua, Fans von
+            Kaffeespezialitäten wie Latte Macchiato, Cappuccino, Espresso
+            Macchiato etc. verwöhnen wir mit fair gehandeltem Espresso einer
+            kleinen Rösterei aus Bremen.
+          </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <h3>Frühstück</h3>
+          <p>
+            Besonders wichtig ist uns dabei Frische und Qualität. Aus diesem
+            Grund beziehen wir unsere Brötchen vom lokalen Bäcker vor Ort! Die
+            frühmorgendliche Abholung und darauffolgende Zubereitung durch unser
+            Team garantiert frische und knackige belegte Brötchen.
+          </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <h3>Handwerk</h3>
+          <p>
+            Wir setzen auf Qualität und Handwerk! In unseren Kaffeeständen
+            werden keine Vollautomaten eingesetzt, sondern alles von Hand
+            hergestellt. Alle Kaffeespezialitäten mit Espresso bereiten
+            geschulte Mitarbeiter an einer Profi-Siebträger Espressomaschine zu.
+            Individuelle Kundenwünsche für den besonderen Kaffeegeschmack oder
+            der große Kaffeedurst einer Menge durchnächtigter Festivalbesucher –
+            beides ist für unser erprobtes Team und durchdachtes Konzept kein
+            Problem!
+          </p>
+        </div>
+      </div>
+    </div>
     <!----------STÄNDE------------>
     <!----------TOURPLAN------------>
     <!----------CONTACT------------>
