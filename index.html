@@ -248,8 +248,77 @@
         Ihr habt Fragen, Anregungen oder möchtet uns buchen? Kein Problem!
         Schreibt uns eine Mail und wir melden uns zeitnah zurück!
       </p>
-      
-            
+
+    
+     
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header" style="background-color: #F2EABC;">
+                <i class="fa fa-envelope"></i> Kontakt
+              </div>
+              <div class="card-body bg-light">
+                <form>
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      aria-describedby="emailHelp"
+                      placeholder="Dein Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Adresse</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      aria-describedby="emailHelp"
+                      placeholder="Deine Email Adresse"
+                      required
+                    />
+                    <small id="emailHelp" class="form-text text-muted"
+                      >We'll never share your email with anyone else.</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Nachricht</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="6"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="mx-auto">
+                    <button type="submit" class="btn text-right" style="background-color: #F2EABC;" >
+                      Abschicken
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="card bg-light mb-3">
+              <div class="card-header" style="background-color: #F2EABC;">
+                <i class="fa fa-home"></i> Addresse
+              </div>
+              <div class="card-body">
+                <p>Höntruper Weg 22</p>
+                <p>59510 Lippetal</p>
+                <p>Email : info@fairtradecoffeebar.de</p>
+                <p>Tel. +33 12 56 11 51 84</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-----TOURPLAN------------>
 
@@ -337,36 +406,50 @@
           </div>
         </div>
         <p class="pt-3">
-          » Vergangene Veranstaltungen findet ihr <a href="#">hier</a>.
+          » Vergangene Veranstaltungen findet ihr
+          <a href="#" style="color: #F54747">hier</a>.
         </p>
       </div>
     </section>
 
     <!--FOOTER-->
-    <footer
-      class="page-footer text-center font-small"
-      style="background-color: #F2EABC;"
-    >
+    <footer class="page-footer text-center" style="background-color: #F2EABC;">
       <div class="container ">
         <div class="row">
-          <div class="col-md-12 py-5">
-            <div class="mb-5 flex-center">
-              <p class="lead">Folg uns in den sozialen Netzwerken!</p>
-              <!--Facebook-->
-              <a class="fb-ic">
-                <i class="fab fa-facebook-f fa-lg mr-md-5 mr-3 fa-2x"> </i>
-              </a>
-              <!--Instagram-->
-              <a class="ins-ic">
-                <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"> </i>
-              </a>
+          <!--Social-->
+          <div class="col-md-6 col-lg-6 col-xl-6 mx-auto">
+            <div class="pb-3" style="font-size: 48px;">
+              <a class="btn-floating btn-lg btn-fb" type="button" role="button"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn-floating btn-lg btn-ins" type="button" role="button"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a class="btn-floating btn-lg btn-yt" type="button" role="button"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a
+                class="btn-floating btn-lg btn-whatsapp"
+                type="button"
+                role="button"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
             </div>
+          </div>
+          <!--Contact-->
+          <div class="col-md-6 col-lg-6 col-xl-6 mx-auto">
+            <ul class="list-unstyled">
+              <li><i class="fa fa-home mr-2"></i> My company</li>
+              <li><i class="fa fa-envelope mr-2"></i> email@example.com</li>
+              <li><i class="fa fa-phone mr-2"></i> + 33 12 14 15 16</li>
+              <li><i class="fa fa-print mr-2"></i> + 33 12 14 15 16</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="footer-copyright bg-dark py-3">
-        © 2020 Copyright:
-        <a href="https://www.fairtradecoffeebar.de">
+      <div class="footer-copyright bg-dark text-light py-3 small">
+        © 2020
+        <a href="https://www.fairtradecoffeebar.de" style="color: #D0CFCF;">
           Coffee King - Fairtrade Coffee Bar GmbH</a
         >
       </div>
